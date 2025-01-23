@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest/2-)model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="example-randomforest-decisiontree models">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,12 +134,26 @@
       <workItem from="1736790209068" duration="77000" />
       <workItem from="1737632680084" duration="1381000" />
       <workItem from="1737634070385" duration="1572000" />
-      <workItem from="1737635653132" duration="305000" />
+      <workItem from="1737635653132" duration="725000" />
+      <workItem from="1737636387888" duration="564000" />
     </task>
+    <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
+      <option name="closed" value="true" />
+      <created>1737635997266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737635997266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="example-randomforest-decisiontree models" />
+    <option name="LAST_COMMIT_MESSAGE" value="example-randomforest-decisiontree models" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mustafai$2__model.coverage" NAME="2-)model Coverage Results" MODIFIED="1737635636737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
