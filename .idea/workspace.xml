@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="example-randomforest-decisiontree models">
-      <change afterPath="$PROJECT_DIR$/machine-learning-algorithms/reinforcement-learnig/1-)hello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/support-vector-machine/1-)model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering/1-)model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering/2-)model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neural-networksAnd-deep-learning/1-) hello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python-libs/cufflinks/1-)hello.py" afterDir="false" />
+    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="train-k-means clustering">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llm/1-)hello.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert/1-)model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert/BertArch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-libs/Transformers/1-)info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-libs/torch/1-)info.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-libs/matplot/1-)info.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-libs/matplot/1-)info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-libs/pandas/1-)info.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-libs/pandas/1-)info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-libs/scikit-learn/1-)info.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-libs/scikit-learn/1-)info.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +60,14 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.1-)model (1).executor": "Run",
     "Python.1-)model (2).executor": "Run",
+    "Python.1-)model (3).executor": "Run",
     "Python.1-)model.executor": "Run",
     "Python.2-)model (1).executor": "Run",
     "Python.2-)model.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/muskaracabey/Desktop/mustafai",
+    "last_opened_file_path": "/Users/muskaracabey/Desktop/mustafai/python-libs/torch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,11 +78,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python-libs/torch" />
+      <recent name="$PROJECT_DIR$/python-libs/Transformers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2-)model (1)">
+  <component name="RunManager" selected="Python.1-)model (3)">
     <configuration name="1-)model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
@@ -125,7 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1-)model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="1-)model (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,12 +142,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest/1-)model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert/1-)model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1-)model (3)" />
         <item itemvalue="Python.2-)model (1)" />
         <item itemvalue="Python.1-)model (2)" />
         <item itemvalue="Python.1-)model (1)" />
         <item itemvalue="Python.2-)model" />
-        <item itemvalue="Python.1-)model" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +233,9 @@
       <workItem from="1737634070385" duration="1572000" />
       <workItem from="1737635653132" duration="725000" />
       <workItem from="1737636387888" duration="636000" />
-      <workItem from="1737637040253" duration="7571000" />
+      <workItem from="1737637040253" duration="7855000" />
+      <workItem from="1737645612526" duration="29848000" />
+      <workItem from="1738918071637" duration="7390000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -235,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737635997266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="train-k-means clustering">
+      <option name="closed" value="true" />
+      <created>1737645480030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737645480030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,11 +261,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="example-randomforest-decisiontree models" />
-    <option name="LAST_COMMIT_MESSAGE" value="example-randomforest-decisiontree models" />
+    <MESSAGE value="train-k-means clustering" />
+    <option name="LAST_COMMIT_MESSAGE" value="train-k-means clustering" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/neural-networksAnd-deep-learning/bert/1-)model.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mustafai$2__model__1_.coverage" NAME="2-)model (1) Coverage Results" MODIFIED="1737645311261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
     <SUITE FILE_PATH="coverage/mustafai$2__model.coverage" NAME="2-)model Coverage Results" MODIFIED="1737635636737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
+    <SUITE FILE_PATH="coverage/mustafai$1__model__3_.coverage" NAME="1-)model (3) Coverage Results" MODIFIED="1738930831349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert" />
     <SUITE FILE_PATH="coverage/mustafai$1__model.coverage" NAME="1-)model Coverage Results" MODIFIED="1737634912572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__1_.coverage" NAME="1-)model (1) Coverage Results" MODIFIED="1737640969296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/support-vector-machine" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__2_.coverage" NAME="1-)model (2) Coverage Results" MODIFIED="1737642144923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
