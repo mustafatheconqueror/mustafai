@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on bert architecture">
-      <change afterPath="$PROJECT_DIR$/build-llm-from-stratch/llm-from-stratch.ipynb" afterDir="false" />
+    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on llm's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/K-Nearest-Neighboors/02-K Nearest Neighbors Project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/K-Nearest-Neighboors/02-K Nearest Neighbors Project.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +228,7 @@
       <workItem from="1737637040253" duration="7855000" />
       <workItem from="1737645612526" duration="29848000" />
       <workItem from="1738918071637" duration="10838000" />
-      <workItem from="1739776319734" duration="9162000" />
+      <workItem from="1739776319734" duration="14264000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -256,7 +254,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738933441749</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="works on llm's">
+      <option name="closed" value="true" />
+      <created>1739827981898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739827981898</updated>
+    </task>
+    <task id="LOCAL-00005" summary="works on llm's">
+      <option name="closed" value="true" />
+      <created>1739828103737</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739828103737</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +280,8 @@
     <MESSAGE value="example-randomforest-decisiontree models" />
     <MESSAGE value="train-k-means clustering" />
     <MESSAGE value="works on bert architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="works on bert architecture" />
+    <MESSAGE value="works on llm's" />
+    <option name="LAST_COMMIT_MESSAGE" value="works on llm's" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
