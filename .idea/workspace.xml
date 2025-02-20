@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on llm's byte pair encoding">
+    <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on llm's input-target pair for feed llm using dataloader">
+      <change afterPath="$PROJECT_DIR$/build-llm-from-stratch/mustafa_llm_stratch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-llm-from-stratch/real-ex-from-vizuara/Byte_Pair_Encoding.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/build-llm-from-stratch/real-ex-from-vizuara/Byte_Pair_Encoding.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,28 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.1-)model (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1-)model (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1-)model (3).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1-)model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2-)model (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.2-)model.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/muskaracabey/Desktop/mustafai/python-libs/torch&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.1-)model (1).executor": "Run",
+    "Python.1-)model (2).executor": "Run",
+    "Python.1-)model (3).executor": "Run",
+    "Python.1-)model.executor": "Run",
+    "Python.2-)model (1).executor": "Run",
+    "Python.2-)model.executor": "Run",
+    "Python.mustafa_llm_stratch.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/muskaracabey/Desktop/mustafai/python-libs/torch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/python-libs/torch" />
@@ -78,7 +81,7 @@
       <recent name="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.1-)model (3)">
+  <component name="RunManager" selected="Python.mustafa_llm_stratch">
     <configuration name="1-)model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
@@ -171,7 +174,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2-)model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mustafa_llm_stratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,12 +183,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/build-llm-from-stratch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest/2-)model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build-llm-from-stratch/mustafa_llm_stratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mustafa_llm_stratch" />
         <item itemvalue="Python.1-)model (3)" />
         <item itemvalue="Python.2-)model (1)" />
         <item itemvalue="Python.1-)model (2)" />
         <item itemvalue="Python.1-)model (1)" />
-        <item itemvalue="Python.2-)model" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +231,7 @@
       <workItem from="1737637040253" duration="7855000" />
       <workItem from="1737645612526" duration="29848000" />
       <workItem from="1738918071637" duration="10838000" />
-      <workItem from="1739776319734" duration="16465000" />
+      <workItem from="1739776319734" duration="31519000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -278,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739882758233</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="works on llm's input-target pair for feed llm using dataloader">
+      <option name="closed" value="true" />
+      <created>1739898203283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739898203283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +301,8 @@
     <MESSAGE value="works on bert architecture" />
     <MESSAGE value="works on llm's" />
     <MESSAGE value="works on llm's byte pair encoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="works on llm's byte pair encoding" />
+    <MESSAGE value="works on llm's input-target pair for feed llm using dataloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="works on llm's input-target pair for feed llm using dataloader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -299,6 +311,11 @@
           <url>file://$PROJECT_DIR$/neural-networksAnd-deep-learning/bert/1-)model.py</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build-llm-from-stratch/mustafa_llm_stratch.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -309,6 +326,7 @@
     <SUITE FILE_PATH="coverage/mustafai$1__model__3_.coverage" NAME="1-)model (3) Coverage Results" MODIFIED="1738933338481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert" />
     <SUITE FILE_PATH="coverage/mustafai$1__model.coverage" NAME="1-)model Coverage Results" MODIFIED="1737634912572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__1_.coverage" NAME="1-)model (1) Coverage Results" MODIFIED="1737640969296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/support-vector-machine" />
+    <SUITE FILE_PATH="coverage/mustafai$mustafa_llm_stratch.coverage" NAME="mustafa_llm_stratch Coverage Results" MODIFIED="1739982555865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__2_.coverage" NAME="1-)model (2) Coverage Results" MODIFIED="1737642144923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
   </component>
 </project>
