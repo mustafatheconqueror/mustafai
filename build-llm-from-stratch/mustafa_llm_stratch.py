@@ -62,9 +62,28 @@ def step_3_use_simple_tokenizer(vocab):
 
     print(tokenizer.decode(ids)) #you can decode also
 
+class MustafaTokenizerV1:
+    """This is a simple word tokenizer."""
+    def __init__(self):
+        print("")
+    def encode(self, text_to_be_tokenized):
+        # step 1- split et ve texti tek tek word word tokenlara ayır.
+        preprocessed = re.split(r'([,.:;?_!"()\']|--|\s)', text_to_be_tokenized)
+
+        #step2- split yaptıktan sonra whitespace tokenları silmek istiyorum.
+        for token in preprocessed:
+            if token == item.strip()
+
+    def decode(self, token_ids):
+        preprocessed = ""
+
+
 
 def practice_everything():
-    print("practice start.")
+    simple_text = "Mustafa is, software engineer."
+
+    mustafa_tokenizer_v1 = MustafaTokenizerV1()
+    mustafa_tokenizer_v1.encode(simple_text)
 
 
 if __name__ == "__main__":
@@ -73,4 +92,5 @@ if __name__ == "__main__":
         raw_text = file.read()
         raw_text = raw_text[:99]
 
+    practice_everything()
 
