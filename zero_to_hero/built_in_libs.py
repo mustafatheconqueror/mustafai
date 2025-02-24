@@ -9,6 +9,7 @@ to be investigate libraries:
 - strip_built_in_function
 - todo: list_built_in_function
 - todo: learn List Comprehension
+- todo: learn set data type
 
 """
 

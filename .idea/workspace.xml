@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on llm's">
-      <change afterPath="$PROJECT_DIR$/zero_to_hero/built_in_libs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zero_to_hero/data_loader_in_pytorch_lib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zero_to_hero/re_lib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zero_to_hero/tiktoken_lib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mustafai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mustafai.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build-llm-from-stratch/mustafa_llm_stratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/build-llm-from-stratch/mustafa_llm_stratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero_to_hero/built_in_libs.py" beforeDir="false" afterPath="$PROJECT_DIR$/zero_to_hero/built_in_libs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,32 +51,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.1-)model (1).executor": "Run",
-    "Python.1-)model (2).executor": "Run",
-    "Python.1-)model (3).executor": "Run",
-    "Python.1-)model.executor": "Run",
-    "Python.2-)model (1).executor": "Run",
-    "Python.2-)model.executor": "Run",
-    "Python.built_in.executor": "Run",
-    "Python.built_in_libs.executor": "Run",
-    "Python.mustafa_llm_stratch.executor": "Run",
-    "Python.re_lib.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/muskaracabey/Desktop/mustafai/python-libs/torch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.1-)model (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.1-)model (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.1-)model (3).executor&quot;: &quot;Run&quot;,
+    &quot;Python.1-)model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2-)model (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.2-)model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.built_in.executor&quot;: &quot;Run&quot;,
+    &quot;Python.built_in_libs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mustafa_llm_stratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.re_lib.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tiktoken_lib.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/muskaracabey/Desktop/mustafai/python-libs/torch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/python-libs/torch" />
@@ -86,7 +87,7 @@
       <recent name="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mustafa_llm_stratch">
+  <component name="RunManager" selected="Python.tiktoken_lib">
     <configuration name="1-)model (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
@@ -102,29 +103,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert/1-)model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="2-)model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mustafai" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering/2-)model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,13 +180,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tiktoken_lib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mustafai" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zero_to_hero" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zero_to_hero/tiktoken_lib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tiktoken_lib" />
         <item itemvalue="Python.mustafa_llm_stratch" />
         <item itemvalue="Python.built_in_libs" />
         <item itemvalue="Python.re_lib" />
         <item itemvalue="Python.1-)model (3)" />
-        <item itemvalue="Python.2-)model (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +237,10 @@
       <workItem from="1737637040253" duration="7855000" />
       <workItem from="1737645612526" duration="29848000" />
       <workItem from="1738918071637" duration="10838000" />
-      <workItem from="1739776319734" duration="42275000" />
+      <workItem from="1739776319734" duration="51812000" />
+      <workItem from="1740411534723" duration="194000" />
+      <workItem from="1740411757926" duration="379000" />
+      <workItem from="1740412147621" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -302,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740058886881</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="works on llm's">
+      <option name="closed" value="true" />
+      <created>1740232178975</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740232178975</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +342,11 @@
           <line>10</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zero_to_hero/tiktoken_lib.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -338,10 +355,11 @@
     <SUITE FILE_PATH="coverage/mustafai$2__model.coverage" NAME="2-)model Coverage Results" MODIFIED="1737635636737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__3_.coverage" NAME="1-)model (3) Coverage Results" MODIFIED="1738933338481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert" />
     <SUITE FILE_PATH="coverage/mustafai$re_lib.coverage" NAME="re_lib Coverage Results" MODIFIED="1740064100381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
+    <SUITE FILE_PATH="coverage/mustafai$tiktoken_lib.coverage" NAME="tiktoken_lib Coverage Results" MODIFIED="1740412617551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$built_in.coverage" NAME="built_in_libs Coverage Results" MODIFIED="1740064416748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$1__model.coverage" NAME="1-)model Coverage Results" MODIFIED="1737634912572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__1_.coverage" NAME="1-)model (1) Coverage Results" MODIFIED="1737640969296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/support-vector-machine" />
-    <SUITE FILE_PATH="coverage/mustafai$mustafa_llm_stratch.coverage" NAME="mustafa_llm_stratch Coverage Results" MODIFIED="1740064672831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
+    <SUITE FILE_PATH="coverage/mustafai$mustafa_llm_stratch.coverage" NAME="mustafa_llm_stratch Coverage Results" MODIFIED="1740410287041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__2_.coverage" NAME="1-)model (2) Coverage Results" MODIFIED="1737642144923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
   </component>
 </project>

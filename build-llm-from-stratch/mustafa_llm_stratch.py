@@ -64,27 +64,58 @@ def step_3_use_simple_tokenizer(vocab):
 
 class MustafaTokenizerV1:
     """This is a simple word tokenizer."""
-    def __init__(self):
-        print("")
+    def __init__(self, vocab):
+        self.str_to_int = vocab
+        self.int_to_str = {}
+
+        for s, i in vocab.items():
+            self.int_to_str[i] = s
+
+
     def encode(self, text_to_be_tokenized):
         # step 1- split et ve texti tek tek word word tokenlara ayır.
         preprocessed = re.split(r'([,.:;?_!"()\']|--|\s)', text_to_be_tokenized)
-
+        new_preprocessed = []
+        ids = []
         #step2- split yaptıktan sonra whitespace tokenları silmek istiyorum.
         for token in preprocessed:
-            if token == item.strip()
+            stripped_item = token.strip()
+            if stripped_item:
+                new_preprocessed.append(stripped_item)
+
+        print("Original", new_preprocessed)
+
+        for token in new_preprocessed:
+            ids.append(self.str_to_int[token])
+
+        return ids
+
+
 
     def decode(self, token_ids):
-        preprocessed = ""
-
-
+        text = []
+        for token_id in token_ids:
+            single_word = self.int_to_str[token_id]
+            single_word = re.sub(r'\s+([,.?!"()\'])', r'\1', single_word)
+            text.append(single_word)
+        return text
 
 def practice_everything():
     simple_text = "Mustafa is, software engineer."
+    preprocessed = re.split(r'([,.:;?_!"()\']|--|\s)', simple_text)
+    all_words = sorted(set(preprocessed))
 
-    mustafa_tokenizer_v1 = MustafaTokenizerV1()
-    mustafa_tokenizer_v1.encode(simple_text)
 
+    vocab = {}
+
+    for index, value in enumerate(all_words):
+        vocab[value] = index
+
+    mustafa_tokenizer_v1 = MustafaTokenizerV1(vocab)
+    token_ids =  mustafa_tokenizer_v1.encode(simple_text)
+
+    print("Encoded: ", token_ids)
+    print("Decoded: ", mustafa_tokenizer_v1.decode(token_ids))
 
 if __name__ == "__main__":
 
