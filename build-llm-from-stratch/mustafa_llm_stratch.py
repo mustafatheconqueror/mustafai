@@ -1,5 +1,5 @@
 import re
-
+import torch
 class SimpleTokenizerV1:
     #Every Tokenizer has encode and decode method
     # we need to think how to handle not exist words or swhitespades or etc.
@@ -117,11 +117,65 @@ def practice_everything():
     print("Encoded: ", token_ids)
     print("Decoded: ", mustafa_tokenizer_v1.decode(token_ids))
 
+    #create token embedding.
+    input_ids = torch.tensor([2, 3, 5, 1]) #we have 4 input token
+
+    vocab_size = 6 #we have only 6 word
+    output_dimension = 3
+
+    embedding_layer = torch.nn.Embedding(vocab_size, output_dimension)
+    print(embedding_layer.weight)
+
+
+def simplifed_Attention_mechanism():
+    #word is: your journey starts with one step.
+
+    #after load input embedding (here for just sampling)
+    inputs = torch.tensor(
+        [[0.43, 0.15, 0.89],  # Your     (x^1)
+         [0.55, 0.87, 0.66],  # journey  (x^2)
+         [0.57, 0.85, 0.64],  # starts   (x^3)
+         [0.22, 0.58, 0.33],  # with     (x^4)
+         [0.77, 0.25, 0.10],  # one      (x^5)
+         [0.05, 0.80, 0.55]]  # step     (x^6)
+    )
+
+    # Journey
+    query_token = inputs[1]
+
+    # initialize as empty tensor.
+    attention_scores = torch.empty(inputs.shape[0])
+
+    #her input vector ile query tokenı dotproduct iler çarpacağız ki
+    #ki yakınlıklarını anlayabilmek için
+
+    #x_i is input token
+    for i, x_i in enumerate(inputs):
+        attention_scores[i] = torch.dot(x_i ,query_token)
+
+    #apply classicalnormalization.
+    attn_weights_2_tmp = attention_scores / attention_scores.sum()
+    print("Attention weights:", attn_weights_2_tmp)
+    print("Sum:", attn_weights_2_tmp.sum())
+
+    # appyl pytorch softwax normalization
+    attention_weights = torch.softmax(attention_scores, dim=0)
+    print("Attention weights softmax:", attention_weights)
+    print("Sum softmax:", attention_weights.sum())
+
+    #create context vector.
+    context_vector_of_2 = torch.zeros(query_token.shape)
+    for i, x_i in enumerate(inputs):
+        context_vector_of_2 += attention_weights[i] * x_i
+
+    print("context vector of 2 : ", context_vector_of_2)
+
+
 if __name__ == "__main__":
 
     with open(file="data-sets/the-verdict.txt", mode="r", encoding="utf-8") as file:
         raw_text = file.read()
         raw_text = raw_text[:99]
 
-    practice_everything()
-
+    #practice_everything()
+    simplifed_Attention_mechanism()
