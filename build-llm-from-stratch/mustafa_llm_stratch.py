@@ -170,6 +170,65 @@ def simplifed_Attention_mechanism():
 
     print("context vector of 2 : ", context_vector_of_2)
 
+def self_attention_with_trainable_weights():
+    #this is a input embedding.
+    inputs = torch.tensor(
+        [[0.43, 0.15, 0.89],  # Your     (x^1)
+         [0.55, 0.87, 0.66],  # journey  (x^2)
+         [0.57, 0.85, 0.64],  # starts   (x^3)
+         [0.22, 0.58, 0.33],  # with     (x^4)
+         [0.77, 0.25, 0.10],  # one      (x^5)
+         [0.05, 0.80, 0.55]]  # step     (x^6)
+    )
+
+    # ilk olarak "Journey" kelimesinin context vectorünü hesaplamak istiyorum.
+    x_2 = inputs[1]
+    d_in = inputs.shape[1]# bu embedding vectorün size ile aynı olmalı
+    d_out = 2 # bu değiştirilebilir
+
+    torch.manual_seed(123)
+    # WeightQuery, WeightKey, WeightValue ' ilk etağta random oluşturacağız
+    W_query = torch.nn.Parameter(torch.rand(d_in, d_out), requires_grad=False)
+    W_key = torch.nn.Parameter(torch.rand(d_in, d_out), requires_grad=False)
+    W_value = torch.nn.Parameter(torch.rand(d_in, d_out), requires_grad=False)
+
+    print("W_query: ", W_query)
+    print("W_key: ", W_key)
+    print("W_value: ", W_value)
+
+    query_2 = x_2 @ W_query #@ matris çarpımı için kullanılacaktır.
+    key_2 = x_2 @ W_key
+    value_2 = x_2 @ W_value
+    print("query_2: ", query_2)
+
+    # create all query, value, key vector
+    keys = inputs @ W_key
+    values = inputs @ W_value
+    queries = inputs @ W_query
+
+    print("keys.shape:", keys.shape)
+
+    print("values.shape:", values.shape)
+
+    print("queries.shape:", queries.shape)
+
+    attension_scores_2 = query_2 @ keys.T #Matris çarpılabilmesi için Transpose al.
+    print("attension_scores_2: ", attension_scores_2)
+
+    all_attention_scores = queries @ keys.T
+    print("all_attention_scores: ", all_attention_scores)
+
+    #create attention weights
+    d_k = keys.shape[-1]
+    atten_weights_2 = torch.softmax(attension_scores_2 / d_k**0.5, dim=-1) #dimler ne işe yarıyor bak bir de transpose ne işe yarıyor bak
+    print(atten_weights_2)
+    print(d_k)
+
+    # context vector for journey first
+    context_vector_2 = atten_weights_2 @ values #transpose ihtiyacı yok
+    print("context_vector_2: ", context_vector_2)
+
+
 
 if __name__ == "__main__":
 
@@ -178,4 +237,5 @@ if __name__ == "__main__":
         raw_text = raw_text[:99]
 
     #practice_everything()
-    simplifed_Attention_mechanism()
+    #simplifed_Attention_mechanism()
+    self_attention_with_trainable_weights()
