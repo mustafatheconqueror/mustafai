@@ -242,7 +242,7 @@
       <workItem from="1740412147621" duration="3741000" />
       <workItem from="1740998475405" duration="2366000" />
       <workItem from="1741000859574" duration="44635000" />
-      <workItem from="1741642659035" duration="6061000" />
+      <workItem from="1741642659035" duration="20367000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -348,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741481542452</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="works on llm's">
+      <option name="closed" value="true" />
+      <created>1741704702803</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741704702803</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +389,11 @@
           <line>15</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DeepSeek-V3/inference/model.py</url>
+          <line>606</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -389,7 +402,7 @@
     <SUITE FILE_PATH="coverage/mustafai$1__model__3_.coverage" NAME="1-)model (3) Coverage Results" MODIFIED="1738933338481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert" />
     <SUITE FILE_PATH="coverage/mustafai$built_in.coverage" NAME="built_in_libs Coverage Results" MODIFIED="1740064416748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__1_.coverage" NAME="1-)model (1) Coverage Results" MODIFIED="1737640969296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/support-vector-machine" />
-    <SUITE FILE_PATH="coverage/mustafai$dummy_gpt2_124milparam.coverage" NAME="dummy-gpt2-124milparam Coverage Results" MODIFIED="1741704464211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
+    <SUITE FILE_PATH="coverage/mustafai$dummy_gpt2_124milparam.coverage" NAME="dummy-gpt2-124milparam Coverage Results" MODIFIED="1741790385583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__2_.coverage" NAME="1-)model (2) Coverage Results" MODIFIED="1737642144923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
     <SUITE FILE_PATH="coverage/mustafai$2__model__1_.coverage" NAME="2-)model (1) Coverage Results" MODIFIED="1737645311261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/unsupervised-learning/k-means-clustering" />
     <SUITE FILE_PATH="coverage/mustafai$re_lib.coverage" NAME="re_lib Coverage Results" MODIFIED="1740064100381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
