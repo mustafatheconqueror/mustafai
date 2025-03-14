@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on llm's">
+      <change afterPath="$PROJECT_DIR$/build-llm-from-stratch/loading_pretrained_weights.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-llm-from-stratch/dummy-gpt2-124milparam.py" beforeDir="false" afterPath="$PROJECT_DIR$/build-llm-from-stratch/dummy-gpt2-124milparam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-llm-from-stratch/dummy-gpt2-124milparam.py" beforeDir="false" afterPath="$PROJECT_DIR$/build-llm-from-stratch/dummy_gpt2_124milparam.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,35 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.1-)model (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1-)model (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1-)model (3).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1-)model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2-)model (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.2-)model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.built_in.executor&quot;: &quot;Run&quot;,
-    &quot;Python.built_in_libs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_loader_in_pytorch_lib.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dummy-gpt2-124milparam.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mustafa_llm_stratch.executor&quot;: &quot;Run&quot;,
-    &quot;Python.re_lib.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tiktoken_lib.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/muskaracabey/Desktop/mustafai/python-libs/torch&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.1-)model (1).executor": "Run",
+    "Python.1-)model (2).executor": "Run",
+    "Python.1-)model (3).executor": "Run",
+    "Python.1-)model.executor": "Run",
+    "Python.2-)model (1).executor": "Run",
+    "Python.2-)model.executor": "Run",
+    "Python.built_in.executor": "Run",
+    "Python.built_in_libs.executor": "Run",
+    "Python.data_loader_in_pytorch_lib.executor": "Run",
+    "Python.dummy-gpt2-124milparam.executor": "Run",
+    "Python.loading_pretrained_weights.executor": "Run",
+    "Python.mustafa_llm_stratch.executor": "Run",
+    "Python.re_lib.executor": "Run",
+    "Python.tiktoken_lib.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/muskaracabey/Desktop/mustafai/python-libs/torch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/python-libs/torch" />
@@ -86,30 +88,7 @@
       <recent name="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dummy-gpt2-124milparam">
-    <configuration name="built_in_libs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mustafai" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zero_to_hero" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zero_to_hero/built_in_libs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.loading_pretrained_weights">
     <configuration name="data_loader_in_pytorch_lib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
@@ -133,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dummy-gpt2-124milparam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dummy_gpt2_124milparam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,7 +126,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build-llm-from-stratch/dummy-gpt2-124milparam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build-llm-from-stratch/dummy_gpt2_124milparam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="loading_pretrained_weights" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mustafai" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/build-llm-from-stratch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build-llm-from-stratch/loading_pretrained_weights.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -204,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dummy-gpt2-124milparam" />
+        <item itemvalue="Python.loading_pretrained_weights" />
+        <item itemvalue="Python.dummy_gpt2_124milparam" />
         <item itemvalue="Python.mustafa_llm_stratch" />
         <item itemvalue="Python.data_loader_in_pytorch_lib" />
         <item itemvalue="Python.tiktoken_lib" />
-        <item itemvalue="Python.built_in_libs" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +244,7 @@
       <workItem from="1740412147621" duration="3741000" />
       <workItem from="1740998475405" duration="2366000" />
       <workItem from="1741000859574" duration="44635000" />
-      <workItem from="1741642659035" duration="20367000" />
+      <workItem from="1741642659035" duration="32520000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -356,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741704702803</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="works on llm's">
+      <option name="closed" value="true" />
+      <created>1741790983146</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741790983146</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +404,16 @@
           <line>606</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build-llm-from-stratch/loading_pretrained_weights.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build-llm-from-stratch/loading_pretrained_weights.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -408,6 +428,7 @@
     <SUITE FILE_PATH="coverage/mustafai$re_lib.coverage" NAME="re_lib Coverage Results" MODIFIED="1740064100381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$tiktoken_lib.coverage" NAME="tiktoken_lib Coverage Results" MODIFIED="1740412617551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$data_loader_in_pytorch_lib.coverage" NAME="data_loader_in_pytorch_lib Coverage Results" MODIFIED="1741001735674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
+    <SUITE FILE_PATH="coverage/mustafai$loading_pretrained_weights.coverage" NAME="loading_pretrained_weights Coverage Results" MODIFIED="1741991752647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
     <SUITE FILE_PATH="coverage/mustafai$1__model.coverage" NAME="1-)model Coverage Results" MODIFIED="1737634912572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$mustafa_llm_stratch.coverage" NAME="mustafa_llm_stratch Coverage Results" MODIFIED="1741092634817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
   </component>
