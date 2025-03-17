@@ -222,6 +222,29 @@ def plot_values(epochs_seen, examples_seen, train_values, val_values, label="los
     plt.show()
 #%%
 
+def classify_review(text, model, tokenizer, device, max_length=None, pad_token_id=50256):
+    model.eval()
+
+    # Prepare inputs to the model
+    input_ids = tokenizer.encode(text)
+    supported_context_length = model.pos_emb.weight.shape[0]
+    # Note: In the book, this was originally written as pos_emb.weight.shape[1] by mistake
+    # It didn't break the code but would have caused unnecessary truncation (to 768 instead of 1024)
+
+    # Truncate sequences if they too long
+    input_ids = input_ids[:min(max_length, supported_context_length)]
+
+    # Pad sequences to the longest sequence
+    input_ids += [pad_token_id] * (max_length - len(input_ids))
+    input_tensor = torch.tensor(input_ids, device=device).unsqueeze(0) # add batch dimension
+
+    # Model inference
+    with torch.no_grad():
+        logits = model(input_tensor)[:, -1, :]  # Logits of the last output token
+    predicted_label = torch.argmax(logits, dim=-1).item()
+
+    # Return the classified result
+    return "spam" if predicted_label == 1 else "not spam"
 
 if __name__ == "__main__":
 
@@ -428,3 +451,50 @@ Step 7: Calculate accuracy after each epoch"""
     train_accuracy = calc_accuracy_loader(train_loader, model, device)
     val_accuracy = calc_accuracy_loader(val_loader, model, device)
     test_accuracy = calc_accuracy_loader(test_loader, model, device)
+
+    # using the llm as a spam classificer
+    """"
+    #%% md
+<div class="alert alert-block alert-info">
+    
+Step 1: Prepare inputs to the model
+
+Step 2: Truncate sequences if they too long
+    
+Step 3: Pad sequences to the longest sequence
+
+Step 4: Add batch dimension
+
+Step 5: Model inference without gradient tracking
+    
+Step 6: Logits of the last output token
+
+Step 7: Return the classified result
+
+</div>
+    """
+
+    text_1 = (
+        "You are a winner you have been specially"
+        " selected to receive $1000 cash or a $2000 award."
+    )
+
+    text_2 = (
+        "Hey, just wanted to check if we're still on"
+        " for dinner tonight? Let me know!"
+    )
+
+    print(classify_review(
+        text_1, model, tokenizer, device, max_length=train_dataset.max_length
+    ))
+
+    print(classify_review(
+        text_2, model, tokenizer, device, max_length=train_dataset.max_length
+    ))
+
+    #save model
+    # torch.save(model.state_dict(), "review_classifier.pth")
+
+    #Once saved, the model can be loaded as follows:
+    #model_state_dict = torch.load("review_classifier.pth")
+    #model.load_state_dict(model_state_dict)

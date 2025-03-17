@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e2c70c2-b4d6-4830-8b81-b3d2991a4a14" name="Changes" comment="works on llm's">
-      <change afterPath="$PROJECT_DIR$/build-llm-from-stratch/email-spam-finetuning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build-llm-from-stratch/personal-asistant-finetunning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-llm-from-stratch/accuracy-plot.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/build-llm-from-stratch/accuracy-plot.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-llm-from-stratch/email-spam-finetuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/build-llm-from-stratch/email-spam-finetuning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +66,7 @@
     "Python.email-spam-finetuning.executor": "Run",
     "Python.loading_pretrained_weights.executor": "Run",
     "Python.mustafa_llm_stratch.executor": "Run",
+    "Python.personal-asistant-finetunning.executor": "Run",
     "Python.re_lib.executor": "Run",
     "Python.tiktoken_lib.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -88,30 +91,7 @@
       <recent name="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.email-spam-finetuning">
-    <configuration name="data_loader_in_pytorch_lib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mustafai" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zero_to_hero" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zero_to_hero/data_loader_in_pytorch_lib.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.personal-asistant-finetunning">
     <configuration name="dummy_gpt2_124milparam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mustafai" />
       <option name="ENV_FILES" value="" />
@@ -204,13 +184,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="personal-asistant-finetunning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mustafai" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/build-llm-from-stratch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build-llm-from-stratch/personal-asistant-finetunning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.personal-asistant-finetunning" />
         <item itemvalue="Python.email-spam-finetuning" />
         <item itemvalue="Python.loading_pretrained_weights" />
         <item itemvalue="Python.dummy_gpt2_124milparam" />
         <item itemvalue="Python.mustafa_llm_stratch" />
-        <item itemvalue="Python.data_loader_in_pytorch_lib" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +247,8 @@
       <workItem from="1740412147621" duration="3741000" />
       <workItem from="1740998475405" duration="2366000" />
       <workItem from="1741000859574" duration="44635000" />
-      <workItem from="1741642659035" duration="41150000" />
+      <workItem from="1741642659035" duration="42216000" />
+      <workItem from="1742196975820" duration="6411000" />
     </task>
     <task id="LOCAL-00001" summary="example-randomforest-decisiontree models">
       <option name="closed" value="true" />
@@ -374,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741992670814</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="works on llm's">
+      <option name="closed" value="true" />
+      <created>1742160830711</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1742160830711</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,8 +438,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mustafai$2__model.coverage" NAME="2-)model Coverage Results" MODIFIED="1737635636737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__3_.coverage" NAME="1-)model (3) Coverage Results" MODIFIED="1738933338481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/neural-networksAnd-deep-learning/bert" />
+    <SUITE FILE_PATH="coverage/mustafai$2__model.coverage" NAME="2-)model Coverage Results" MODIFIED="1737635636737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$built_in.coverage" NAME="built_in_libs Coverage Results" MODIFIED="1740064416748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$1__model__1_.coverage" NAME="1-)model (1) Coverage Results" MODIFIED="1737640969296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/support-vector-machine" />
     <SUITE FILE_PATH="coverage/mustafai$dummy_gpt2_124milparam.coverage" NAME="dummy-gpt2-124milparam Coverage Results" MODIFIED="1741790385583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
@@ -437,8 +449,9 @@
     <SUITE FILE_PATH="coverage/mustafai$tiktoken_lib.coverage" NAME="tiktoken_lib Coverage Results" MODIFIED="1740412617551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$data_loader_in_pytorch_lib.coverage" NAME="data_loader_in_pytorch_lib Coverage Results" MODIFIED="1741001735674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zero_to_hero" />
     <SUITE FILE_PATH="coverage/mustafai$loading_pretrained_weights.coverage" NAME="loading_pretrained_weights Coverage Results" MODIFIED="1741991752647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
+    <SUITE FILE_PATH="coverage/mustafai$personal_asistant_finetunning.coverage" NAME="personal-asistant-finetunning Coverage Results" MODIFIED="1742219644243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
     <SUITE FILE_PATH="coverage/mustafai$1__model.coverage" NAME="1-)model Coverage Results" MODIFIED="1737634912572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machine-learning-algorithms/supervised-learning/decisiontree and - random-forest" />
     <SUITE FILE_PATH="coverage/mustafai$mustafa_llm_stratch.coverage" NAME="mustafa_llm_stratch Coverage Results" MODIFIED="1741092634817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
-    <SUITE FILE_PATH="coverage/mustafai$email_spam_finetuning.coverage" NAME="email-spam-finetuning Coverage Results" MODIFIED="1742138773279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
+    <SUITE FILE_PATH="coverage/mustafai$email_spam_finetuning.coverage" NAME="email-spam-finetuning Coverage Results" MODIFIED="1742215434028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/build-llm-from-stratch" />
   </component>
 </project>
